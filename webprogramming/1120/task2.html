@@ -1,0 +1,36 @@
+<head></head>
+
+<body>
+<script>
+    // Create a Map
+    const cars = new Map([
+    ["BMW", 2500]
+    ["Volvo", 5000]
+    ["Kia", 1500]
+    ["Toyota", 3000]
+    ["Hyundai", 2000]
+    ]);
+
+    cars.size
+    document.getElementById("demo").innerHTML = "Car size before delete = " + carsize;
+
+    let text="";
+
+    for (const x of cars){
+        if x.key<=2000{
+            x.delete()
+        }
+    }
+
+
+
+
+    let total = 0;
+    for (const x of cars.values()) {
+    total += x;
+    }
+    document.getElementById("demo").innerHTML = "Total sum of values = " + total;
+</script>
+</body>
+
+//maps, array,  fmf

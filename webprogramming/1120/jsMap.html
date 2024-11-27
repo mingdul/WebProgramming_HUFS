@@ -1,0 +1,56 @@
+<head>
+</head>
+<body>
+
+<!-- <h1>JavaScript Maps</h1>
+<h2>The forEach() Method</h2>
+<p id="demo"></p>
+<script>
+// Create a Map
+const fruits = new Map([
+["apples", 500],
+["bananas", 300],
+["oranges", 3200]
+]);
+let text = "";
+fruits.forEach (function(value, key) {
+text += key + ' = ' + value + "<br>"
+})
+document.getElementById("demo").innerHTML = text;
+</script> -->
+
+<h1>JavaScript Maps</h1>
+<h2>The values() Method</h2>
+<p id="demo"></p>
+<script>
+
+// Create a Map
+const fruits = new Map([
+["apples", 500],
+["bananas", 300],
+["oranges", 200]
+]);
+
+// Create a Map
+// const fruits = new Map([
+// ["apples", 500],
+// ["bananas", 300],
+// ["oranges", 200],
+// ["oranges", 100],
+// ["oranges", 400],
+// ["oranges", 200]
+// ]); -> 1000 (map only unique value -> it will keep overwrite)
+
+let total = 0; // let total = " " ; ->500300200
+for (const x of fruits.values()) {
+total += x ;
+
+// total += x + "<br>";
+// Total sum of values = 0500
+// 300
+// 200
+}
+document.getElementById("demo").innerHTML = "Total sum of values = " + total;
+</script>
+
+</body>

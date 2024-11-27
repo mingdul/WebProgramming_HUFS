@@ -1,0 +1,273 @@
+/* Body */
+body{
+    font-family: 'Courier New', monospace;
+    line-height:2;
+    color:#555
+}
+
+/* Main */
+main {
+    max-width: 2000px;
+    width: 100%;
+    margin-top:350px;
+}
+
+/* H1,H2,H3 */
+h1,h2{
+    color:#26d0ff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 1;
+    text-decoration-line: underline;
+}
+h3{
+    text-align: left;
+    text-transform: uppercase;
+    text-indent:20px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-style: italic;
+    text-decoration-line: underline;
+}
+
+/* Paragraph */
+p{
+    text-align: left;
+    text-transform: lowercase;
+    text-indent:20px;
+    line-height: 2;
+    font-size: 18px;
+    scroll-margin-top: 16em;
+}
+
+/* Table */
+table{
+    padding: 50px 60px 30px 10px;
+    border:4px dotted black;
+    border-collapse: separate;
+    width: 100%;
+}
+th{
+    background-color: pink;
+    border:3px solid black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color:#04AA6D
+}
+td{
+    border:2px solid black;
+    text-align: left;
+    font-size: 17px;
+}
+
+tr:nth-child(odd){
+    background-color: hotpink;
+}
+
+/* Section */
+section{
+    clear: both;  /* Clear float */
+    overflow: auto;
+    scroll-margin-top: 16em;
+}
+
+/* Header and Footer */
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./202203054_images/welcometoseoul.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 16em;
+    top: 0;
+    width:100%;
+    align-items: center;
+    font-style: oblique;
+    font-weight:bold;
+    position: fixed;
+    text-align: center;
+    text-shadow:5px 5px 5px black
+}
+
+header p{
+    color:rgba(255, 255, 255, 0.6)
+}
+
+footer{
+    margin: 110px 50px 10px 0px;
+    color:white;
+    background-color: rgb(59, 59, 59);
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+/* Link */
+.link{
+    color:rgb(255, 160, 0);
+    padding: 0 0 0.3em 0;
+}
+
+.link:hover{
+    color: hsl(0, 100%, 50%);
+}
+
+.link:active{
+    background-color:blue
+}
+.link:visited{
+    text-decoration-line: overline;
+    background-color: cyan;
+}
+
+/* Navigation */
+.nav__list{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(59, 59, 59);
+    height:70px;
+    width: 100%;
+}
+.nav__list-item{
+    float: left;
+    margin: 0em 1.5em 0.5em 0;
+    border-right:4px double white;
+}
+
+.nav__list-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 40px 30px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* 부드러운 호버 효과 */
+}
+.nav__list-item a:hover{
+    background-color: #0407aa;
+}
+
+.nav__list-item a.active {
+    background-color: #04AA6D;
+}
+.nav__list-item a.visited{
+    background-color: #def605;
+}
+
+/* nav-Dropdown */
+.dropdown-content {
+    display: none; /* 기본적으로 숨김 */
+    position: absolute;
+    background-color: #4c59af;
+    width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #dcd8d8;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+
+.nav__list-item:hover .dropdown-content {
+    display: block;
+}
+
+/* Image gallery */
+
+/* setting of the whole gallery*/
+div.gallery {
+    margin: 30px 0px 50px 10px;
+    border-style: outset;
+    border-width: 5px;
+    border-color: rgb(0, 255, 149);
+    border-radius: 10px;
+
+    float: left;
+    width: 23%;
+
+    overflow: scroll;
+}
+
+div.gallery:hover {
+    border: 5px solid red;
+}
+/* setting of each image */
+div.gallery img {
+    width: 100%;
+    height: 150px;
+    display: block;
+}
+/* setting of description of each image */
+div.desc {
+    padding: 50px 20px 30px 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* History section */
+#History{
+    top: 50px;
+    
+}
+#History article{
+    margin: 40px 20px 10px 50px;
+    height: 200px;
+    background-color:rgb(206, 243, 255);
+    /* rest of the content is hidden */
+    overflow: scroll;
+    
+}
+
+/* LocalFood section */
+#LocalFood{
+    line-height:3;
+}
+#LocalFood img{
+    width: 120px;
+    height: 80px;
+    margin: 10px 20px 0px 75px;
+    border-style:dashed;
+    border-width:10px;
+    border-color: greenyellow;
+    border-radius: 10px;
+    float:left;
+    clear: left;
+}
+.clearfix{
+    overflow:auto;
+}
+
+/* FunFacts section */
+#FunFacts{
+    margin: 16px 20px 50px 75px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./202203054_images/seoulview.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    color:white
+
+}
+
+/* contact section */
+#contact{
+
+    background-color: rgb(200, 255, 200);
+    text-align:left;
+    text-decoration: underline overline;
+    text-transform:capitalize;
+    letter-spacing:2px ;
+    line-height:3;
+    font-size: 20px;
+    font-weight: bold;
+}

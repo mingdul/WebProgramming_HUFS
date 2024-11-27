@@ -1,0 +1,92 @@
+<head></head>
+
+<body>
+<!-- EX1
+<h1>JavaScript Sets</h1>
+<p>Create a set from an array:</p>
+<p id="demo"></p>
+<script>
+// Create a Set
+const letters = new Set(["a","b","c","d"]); ///set에array만 넣을 수 있음!!! object 안됨
+// Display set.size
+document.getElementById("demo").innerHTML =
+"The set has " + letters.size + " values.";
+</script> -->
+
+<!-- <h1>JavaScript Sets</h1>
+<h2>The add() Method</h2>
+<p>The add() method adds values to a set:</p>
+<p id="demo"></p>
+<script>
+// Create a Set
+const letters = new Set();
+// Add Values to the Set
+letters.add("a");
+letters.add("b");
+letters.add("c");
+// Display the Size
+document.getElementById("demo").innerHTML =
+"The set has " + letters.size + " values.";
+</script> -->
+
+<h1>JavaScript Sets</h1>
+<h2>The add() Method</h2>
+<p>The add() method adds values to a Set:</p>
+<p id="demo"></p>
+<script>
+// Create a new Set
+const letters = new Set(["a","b","c"]);
+// Add a new Element
+
+letters.add("d");
+letters.add("e"); //add 할 때는 only unique item만 추가할 수 있음
+
+// for (let i=0; i<100; i++ ){
+//     letters.add(i)
+// } //The set has 105 values.
+
+// const person = {fname:"John", lname:"Doe", age:25};
+// for (let x in person){
+//     letters.add(person[x])
+// } //for in : loops through the properties of an object
+
+// const cars = ["BMW", "Volvo", "Kia", "Toyota", "Hyundai"];
+// for (let x of cars){
+//     letters.add(x)
+// }
+// //(1)leters.add(person[x]) vs. (2)letters.add(x) : array is already indexed. 
+// //(1)의 x는 key, (2) x 는 number
+
+// //input
+// for (let i=0; i<100; i++ ){
+//     letters.add(i);
+// }
+// //output
+// let text="";
+// for (const x of letters){ //const is not mendatory
+//     text += x+"<br>";
+// }
+
+// const person = {fname:"John", lname:"Doe", age:25};
+// for (let x in person){
+//     letters.add(person[x])
+// }
+
+// let text=""
+// for (const x of letters){
+//     text+=x+"<br>";
+// }
+
+// let text=""
+// for (const x of letters){
+//     text+=x+"<br>";
+// }
+
+//set has no key!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+// Display set.size
+document.getElementById("demo").innerHTML ="The set has " + letters.size + " values.";
+</script>
+
+
+</body>
